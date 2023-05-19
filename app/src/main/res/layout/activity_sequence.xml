@@ -1,0 +1,182 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".SequenceActivity"
+    android:id="@+id/frame"
+    android:background="#F0F8F8"
+    >
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        android:layout_marginTop="15dp"
+        >
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:gravity="center"
+            >
+            <ImageButton
+                android:id="@+id/back_btn"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:backgroundTint="#F0F8F8"
+                app:srcCompat="@drawable/arrow_left"
+
+                />
+            <TextView
+                android:id="@+id/sequences_name"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:text="Fibonacci Sequence"
+                android:fontFamily="@font/metropolis_black"
+                android:textColor="@color/black"
+                android:textSize="30sp"
+                />
+        </LinearLayout>
+
+        <TextView
+            android:id="@+id/seqeunce_desc"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/fib_desc"
+            android:inputType="textMultiLine"
+            android:layout_margin="20dp"
+            android:fontFamily="@font/metropolis_medium"
+            android:textColor="@color/black"
+            android:textSize="18sp"
+            />
+
+        <TextView
+            android:id="@+id/sequence_find"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/fib_find"
+            android:layout_marginLeft="20dp"
+            android:layout_marginRight="20dp"
+            android:layout_marginBottom="10dp"
+            android:fontFamily="@font/metropolis_black"
+            android:textColor="@color/black"
+            android:textSize="24sp"
+            />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:layout_marginLeft="20dp"
+            android:layout_marginRight="20dp"
+            android:layout_marginBottom="10dp"
+
+            >
+
+            <TextView
+                android:id="@+id/sequence_form"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/fib_form"
+                android:fontFamily="@font/metropolis_black"
+                android:textColor="@color/black"
+                android:textSize="18sp"
+                />
+
+            <EditText
+                android:id="@+id/input"
+                android:layout_width="wrap_content"
+                android:layout_height="35dp"
+                android:layout_marginLeft="10dp"
+                android:ems="5"
+                android:inputType="number"
+                android:fontFamily="@font/metropolis_semibold"
+                android:background="@drawable/custom_edittext"
+                android:textCursorDrawable="@drawable/custom_cursor"
+                android:textAlignment="center"
+                />
+            <EditText
+                android:id="@+id/input2"
+                android:layout_width="wrap_content"
+                android:layout_height="35dp"
+                android:layout_marginLeft="10dp"
+                android:ems="5"
+                android:inputType="number"
+                android:fontFamily="@font/metropolis_semibold"
+                android:background="@drawable/custom_edittext"
+                android:textCursorDrawable="@drawable/custom_cursor"
+                android:textAlignment="center"
+                />
+
+        </LinearLayout>
+
+        <ScrollView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical">
+
+                <EditText
+                    android:id="@+id/output"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:ems="10"
+                    android:gravity="start|top"
+                    android:inputType="textMultiLine"
+                    android:layout_marginLeft="20dp"
+                    android:layout_marginRight="20dp"
+                    android:fontFamily="@font/metropolis_regular"
+                    android:background="@drawable/custom_edittext"
+                    android:textColor="@color/black"
+                    android:padding="10dp"
+                    />
+            </LinearLayout>
+
+        </ScrollView>
+
+
+
+        <androidx.appcompat.widget.AppCompatButton
+            android:id="@+id/calc_btn"
+            android:layout_width="200dp"
+            android:layout_height="wrap_content"
+            android:text="Calculate"
+            android:layout_marginTop="15dp"
+            android:textSize="18sp"
+            android:textColor="@color/white"
+            android:fontFamily="@font/metropolis_bold"
+            android:textAllCaps="false"
+            android:background="@drawable/custom_button2"
+            android:layout_marginLeft="20dp"
+            android:layout_marginRight="20dp"
+            android:layout_gravity="center"
+            />
+
+        <androidx.appcompat.widget.AppCompatButton
+            android:id="@+id/clr_btn"
+            android:layout_width="200dp"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_marginLeft="20dp"
+            android:layout_marginTop="15dp"
+            android:layout_marginRight="20dp"
+            android:layout_marginBottom="30dp"
+            android:background="@drawable/custom_button2"
+            android:fontFamily="@font/metropolis_bold"
+            android:text="Clear"
+            android:textAllCaps="false"
+            android:textColor="@color/white"
+            android:textSize="18sp" />
+
+    </LinearLayout>
+
+
+
+</ScrollView>

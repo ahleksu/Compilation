@@ -1,0 +1,110 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".MainActivity"
+    android:gravity="center"
+    android:padding="25dp"
+    android:background="#F0F8F8"
+
+    >
+
+    <TextView
+        android:id="@+id/sequences_title"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="AUTOMATA\nCASE STUDY"
+        android:gravity="center"
+        android:fontFamily="@font/metropolis_black"
+        android:textColor="@color/black"
+        android:textSize="40sp"
+        />
+
+    <TextView
+        android:id="@+id/group_members"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Group: \n\nAbrugar, Ronabel\nMacatuhay, Angel Kaye\nOchoa, Carl Dominic\nRobles, John Alex"
+        android:fontFamily="@font/metropolis_semibold"
+        android:textColor="@color/black"
+        android:textSize="20sp"
+        android:layout_marginTop="20dp"
+        />
+
+    <TextView
+        android:id="@+id/choose_one"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Please choose one:"
+        android:fontFamily="@font/metropolis_black"
+        android:textColor="@color/black"
+        android:textSize="24sp"
+        android:layout_marginTop="20dp"
+
+        />
+
+    <androidx.appcompat.widget.AppCompatButton
+        android:id="@+id/euc_btn"
+        android:layout_width="300dp"
+        android:layout_height="wrap_content"
+        android:text="Euclidean Algorithm"
+        android:layout_marginTop="15dp"
+        android:textSize="18sp"
+        android:textColor="@color/white"
+        android:fontFamily="@font/metropolis_bold"
+        android:textAllCaps="false"
+        android:background="@drawable/custom_button1"
+        />
+
+    <androidx.appcompat.widget.AppCompatButton
+        android:id="@+id/col_btn"
+        android:layout_width="300dp"
+        android:layout_height="wrap_content"
+        android:text="Collatz Sequence"
+        android:layout_marginTop="10dp"
+        android:textSize="18sp"
+        android:textColor="@color/white"
+        android:fontFamily="@font/metropolis_bold"
+        android:textAllCaps="false"
+        android:background="@drawable/custom_button1"/>
+
+    <androidx.appcompat.widget.AppCompatButton
+        android:id="@+id/fib_btn"
+        android:layout_width="300dp"
+        android:layout_height="wrap_content"
+        android:text="Fibonacci Sequence"
+        android:layout_marginTop="10dp"
+        android:textSize="18sp"
+        android:textColor="@color/white"
+        android:fontFamily="@font/metropolis_bold"
+        android:textAllCaps="false"
+        android:background="@drawable/custom_button1"/>
+
+    <androidx.appcompat.widget.AppCompatButton
+        android:id="@+id/luc_btn"
+        android:layout_width="300dp"
+        android:layout_height="wrap_content"
+        android:text="Lucas Sequence"
+        android:layout_marginTop="10dp"
+        android:textSize="18sp"
+        android:textColor="@color/white"
+        android:fontFamily="@font/metropolis_bold"
+        android:textAllCaps="false"
+        android:background="@drawable/custom_button1"/>
+
+    <androidx.appcompat.widget.AppCompatButton
+        android:id="@+id/tri_btn"
+        android:layout_width="300dp"
+        android:layout_height="wrap_content"
+        android:text="Tribonacci Sequence"
+        android:layout_marginTop="10dp"
+        android:textSize="18sp"
+        android:textColor="@color/white"
+        android:fontFamily="@font/metropolis_bold"
+        android:textAllCaps="false"
+        android:background="@drawable/custom_button1"/>
+
+</LinearLayout>
